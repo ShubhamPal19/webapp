@@ -1,5 +1,5 @@
-function alert_output()
+function alert_output(text)
 {
 
-    window.alert("you have clicked alert");
+    window.alert(text);
 }

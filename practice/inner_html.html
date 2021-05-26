@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script type="text/javascript" src="dynamicpage.js"></script>
+        </head>
+<body>
+
+    <h1>This file contains java script inner html</h1>
+
+
+
+    <form action="POST">
+
+        <h5>Enter the birth year of person</h5>
+        <input type="text" name="birth_year" size=15>
+        <h5>Enter the current year </h5>
+        <input type="text" name="current_year" size=15>
+        <input type="button" value="CALCULATE" onclick="cal_age(this.form)">
+
+        <h5>Your age is : </h5>
+         <input type="text" size= 15 name="age">
+    </form>
+
+    
+    <p>Age of person is : </p><p id="age"></p>
+
+    <script>
+        var birthyear=1992;
+        var current_year=2021;
+        document.getElementById("age").innerHTML=current_year-birthyear;
+
+    </script>
+</body>
+</html>
