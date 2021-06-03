@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- syntax
+    $(selector).action()
+    $ ==> define access jquery
+    (selector)===> fing HTML element
+    action() ===> preformed on elements
+
+    nest jQuery methos in:
+    $(document).ready(function(){
+
+        inset jquery methods here...
+    });
+     
+     -->
+</head>
+<body>
+
+
+<!-- <p>click here to see magic</p> -->
+<h5>Lorem i consectetur adipisicing elit. Iure voluptatem nihil quasi ipsa possimu</h5>
+
+
+<h1>demonstration of simple jquery function</h1>
+<p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod reprehenderit non iure laudantium molestias enim illo praesentium, quibusdam eligendi! Qui minima rem ut omnis cupiditate necessitatibus exercitationem debitis soluta.</p>
+<button id="Btn" ></button>
+
+
+
+
+
+
+<script>
+
+    document.getElementById('Btn').innerHTML="Hide";
+    $('button').click(function(){
+        $('#para').hide();
+        document.getElementById('Btn').innerHTML="Show";
+    });
+    
+    
+
+
+</script>
+
+
+
+    
+</body>
+</html>
