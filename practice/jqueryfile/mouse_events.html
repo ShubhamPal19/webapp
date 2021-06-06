@@ -9,23 +9,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
 
+    
         $(document).ready(function(){
 
-            $('.container').click(function(){
+//             $('.container').click(function(){
 
 
-                $(this).hide();
-            });
+ //               $(this).hide();
+   //         }); 
             $('.container').mouseenter(function(){
-
+                
+                alert("You entered unauthorised area !!!");
                 $(this).blur();
+               
+
+            });
+            $('.box').mousedown(function(){
+                
                 $(this).hide();
 
             });
-            $('.container').mousemove(function(){
-                $(this).show();
-
-            });
+           
 
         });
 
@@ -43,12 +47,33 @@
             justify-content: center;
             align-items: center;
         }
+        .box{
+            height: 300px;
+            width: 200px;
+            justify-content: center;
+            background-color: black;
+        }
+        h1
+        {
+            justify-content: center;
+            align-items: center;
+        }
+
+
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>    BOX 1   </h1></div>
+    <h1>   unauthorised AREA </h1></div>
+
+
+
+    <div class="box">
+        <h1>
+            mousedown
+        </h1>
+    </div>
     
 </body>
 </html>
