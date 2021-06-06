@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changeBG</title>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+    
+        $(document).ready(function(){
+
+            $('body').click(function(){
+
+
+                $(this).css("background-color","red");
+                
+            })
+
+            $('.container').mouseenter(function(){
+                $(this).css("background-color","blue");
+                
+                
+               
+
+            });
+
+            $('.container').mouseleave(function(){
+                
+                
+                $(this).css("background-color","chartreuse");
+                $('.box').css("backgroud-color","cyan");
+               
+
+            });
+
+
+            $('.box').on({
+                
+
+                mouseenter : function(){
+                
+                $(this).css("background-color","yellow");
+                
+            },
+            mouseleave : function(){
+                
+                $(this).css("background-color","green");
+                
+                
+            } ,
+            
+            click : function(){
+                
+                
+                $(this).css("background-color","red");
+
+
+            }
+            
+            
+         } );
+            
+           
+
+        });
+
+    </script>
+
+
+
+    <style>
+
+        body{
+
+            background-color: burlywood;
+            align-items:center;
+        }
+
+        .container{
+            padding-top: 50px;
+            width: 500px;
+            height: 400px;
+            background-color: chartreuse;
+            display: flex;
+        }
+        .box
+        {
+            margin: 10px;
+
+            width: 150px;
+            height:300px ;
+            background-color:cyan;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+
+
+    
+</body>
+</html>
