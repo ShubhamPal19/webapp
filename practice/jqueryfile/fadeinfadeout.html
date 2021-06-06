@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+        var i;
+        $(document).ready(function(){
+
+
+            $('#fin').click(function()
+            {
+
+                $('#div1').fadeIn(1000);
+                $('#div2').fadeIn(2000);
+                $('#div3').fadeIn(3000);
+                $('#div4').fadeIn(4000);
+                
+                
+
+            })
+
+            $('#fout').click(function()
+            {
+
+                $('#Div1').fadeout(4000);
+                $('#Div2').fadeout(3000);
+                $('#Div3').fadeout(2000);
+                $('#Div4').fadeout(1000);
+                
+
+            })
+           
+            $('#fto').click(function()
+            {
+
+                $('#d1').fadeto(4000,0.20);
+                $('#d2').fadeto(3000,0.40);
+                $('#d3').fadeto(2000,0.60);
+                $('#d4').fadeto(1000,0.80);
+                
+
+            })
+           
+            $('#ftog').click(function()
+            {
+
+                $('#D1').fadeToggle(4000);
+                $('#D2').fadeToggle(3000);
+                $('#D3').fadeToggle(2000);
+                $('#D4').fadeToggle(1000);
+                
+
+            })
+           
+        });
+
+    </script>
+
+
+    <style>
+
+        .container
+        {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(94, 243, 248);
+            display: flex;
+            padding: 20px;
+        }
+        .outerbox{
+            margin: 5px;
+            background-color: orangered;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            ;
+        }
+        .box
+        {
+            
+            height: 70px;
+            width: 150px;
+            margin: 10px 20px;
+            background-color: darkred;
+            display: none;       
+        
+  }
+        .Box
+        {
+
+            height: 70px;
+            width: 150px;
+            margin: 10px 20px;
+            background-color: darkred;
+           
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div id="fadein"  class="outerbox">
+        <button id="fin">Fadein</button>
+        
+        <div id="div1" class="box"></div>
+        <div id="div2" class="box"></div>
+        <div id="div3" class="box"></div>
+        <div id="div4" class="box"></div>
+    </div>
+    <div id="fadein" class="outerbox">
+        <button id="fout">Fadeout</button>
+        
+        <div id="Div1" class="Box"></div>
+        <div id="Div2" class="Box"></div>
+        <div id="Div3" class="Box"></div>
+        <div id="Div4" class="Box"></div>
+        
+    </div>
+</div>
+<body>
+<div class="container">
+
+    <div id="fto"  class="outerbox">
+        <button id="fto">Fade to</button>
+        
+        <div id="d1" class="box"></div>
+        <div id="d2" class="box"></div>
+        <div id="d3" class="box"></div>
+        <div id="d4" class="box"></div>
+    </div>
+    <div id="ftog" class="outerbox">
+        <button id="ftog">Fade Toggle</button>
+        
+        <div id="D1" class="Box"></div>
+        <div id="D2" class="Box"></div>
+        <div id="D3" class="Box"></div>
+        <div id="D4" class="Box"></div>
+        
+    </div>
+</div>
+
+</div>
+
+
+</body>
+</html>
