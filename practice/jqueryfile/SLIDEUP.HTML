@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+
+
+    $(document).ready(function(){
+
+
+        $('.bar').click(function()
+        {
+          
+            $('.panel').slideUp(1000);
+
+
+        });
+    });
+</script>
+
+ <style>
+
+    .container
+ {
+     height: 500px;
+     width: 100%;
+     background-color: #93bbe9;
+
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ .bar,.panel{
+
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+ }
+ .bar{
+     height: auto;
+     background-color: #A2A2A1FF;
+
+ }
+ .panel
+ {
+     height: 400px;
+     background-color: RED;
+    
+ }
+ </style>
+<body>
+
+
+    <div class="container">
+        <div class="bar">
+            <h1>Click here to see the effect</h1>
+
+        </div>
+
+        <div class="panel">
+            THIS IS PANEL
+        </div>
+    </div>
+    
+</body>
+</html>
