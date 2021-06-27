@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('button').click(function(){
+
+            
+                $('.box').hide(1000,function(){
+
+                    alert("The square is now hidden!");
+                });
+
+
+            })
+        });
+
+        
+    </script>
+
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            position: absolute;
+        }
+        button{
+            display:  block;
+            height: 50px;
+            margin: 30px;
+            width:  150px;
+            border-radius: 2px;
+            background-color: dimgray;
+
+        }
+
+        body {
+            padding: 0px;
+            
+        
+        }
+    </style>
+</head>
+<body>
+
+    <button>Start Animation</button>
+    <div class="box">
+        box1
+    </div>
+    
+</body>
+</html>
