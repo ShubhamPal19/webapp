@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+        <script>
+            $(document).ready(function(){
+                
+             
+               $('#button1').click(function(){
+                  
+                  $('#text1').append("  new text line");
+                })
+                
+               $('#button2').click(function(){
+                   var i="4";
+                   var a= "<li>"+i+". " + $('#in').val()+"</li>";
+                   $('ul').append(a);
+                   
+               })
+             
+            });
+
+        </script>
+</head>
+<body>
+ 
+      <p id="text1">following are some sports</p>
+     
+      <ul>
+          <li>1. footbll</li>
+          <li>2. cricket</li>
+          <li>3. polo </li>
+        
+      </ol>
+     
+    <button id="button1">append text</button>
+    <br>
+    <input type="text" name="enter sports" id="in">
+    <button id="button2">append item</button>
+  
+    
+    
+</body>
+</html>
