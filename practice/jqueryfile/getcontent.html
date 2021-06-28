@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+        <script>
+            $(document).ready(function(){
+               $('#button1').click(function(){
+                   alert($('#line').text());
+               })
+               $('#button2').click(function(){
+                   alert($('#line').html());
+               })
+            })
+        </script>
+</head>
+<body>
+    <p id="line">this is a <i> simple</i> line of <b>text</b></p>
+    <button id="button1">show text</button>
+    <button id="button2">show html</button>
+    
+</body>
+</html>
