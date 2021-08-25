@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+        <script>
+            $(document).ready(function(){
+                
+             
+               $('#button1').click(function(){
+                  
+                   $('p').remove ('#p1,#p2');
+                })
+              
+             
+            });
+
+        </script>
+        <style>
+            img{
+                height: 160px;
+                width: 90vw;
+                display: block;
+                margin: auto;
+               
+                
+            }
+            button{
+                display:  block;
+                height: 40px;
+                background-color: chartreuse;
+                margin: 10px;
+
+            }
+            button:hover{
+                background-color: rgb(38, 75, 2);
+            }
+
+            #bx{
+
+                border: 2px dotted blue;
+                background-color: cyan;
+            }
+            #btn{
+                width: 100vw;
+
+                display: flex;
+                justify-content: center;
+            }
+            p
+            {
+                font-size: 50px;
+            }
+        </style>
+</head>
+<body>
+ 
+      <p id="text1">addtext</p>
+      
+      <div id="btn">
+ 
+          <button id="button1">Remove</button>
+          
+          
+         </div>
+        
+         <div>
+         <p id="p1">para1</p>
+         <p id="p2">para2</p>
+         <p id="p3">para3</p>
+         </div>
+
+     
+  
+    
+    
+</body>
+</html>

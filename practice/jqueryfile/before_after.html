@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+        <script>
+            $(document).ready(function(){
+                
+             
+               $('#button1').click(function(){
+                  
+                   $('img').before (" new text line");
+                })
+                
+                $('#button2').click(function(){
+                    
+                    $('img').after (" new text line");
+                   
+               })
+             
+            });
+
+        </script>
+        <style>
+            img{
+                height: 160px;
+                width: 160px;
+                display: block;
+               margin: auto;
+                
+            }
+            button{
+                display:  block;
+                height: 40px;
+                background-color: chartreuse;
+                margin: 10px;
+
+            }
+            button:hover{
+                background-color: rgb(38, 75, 2);
+            }
+            #btn{
+                width: 100vw;
+
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+</head>
+<body>
+ 
+      <p id="text1">addtext</p>
+      
+      <div id="btn">
+ 
+          <button id="button1">Text before</button>
+          
+          
+          <button id="button2">Text  after </button>
+         </div>
+     
+     <img src="blue-copy-.jpg" alt="">
+  
+    
+    
+</body>
+</html>

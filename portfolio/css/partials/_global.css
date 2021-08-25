@@ -1,0 +1,94 @@
+/* global classes */
+
+
+
+.title-text{
+    font:normal bold 50px/72px var(--roboto);
+
+    
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+
+}
+
+.button{
+
+    padding: .8rem 2.2rem;
+    font:normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+
+}
+
+.button.primary-button{
+
+    margin-right: 25px;
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+    border: 2px solid whitesmoke;
+
+}
+
+.button.primary-button:hover{
+    /* border: 2px solid ; */
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+    /* border: 51px solid var(--gradient-color); */
+
+
+}
+
+.button.primary-button::after,.button.secondary-button::after{
+    content: '';  
+    position: absolute;
+    top:-2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 3px solid rgb(109, 85, 247) ;
+    border-radius: 4px;
+    /* width: 1110px; */
+    /* z-index: -0.5; */
+    /* top:-2px; left: -2px;
+    bottom: -2px; right: -2px; */
+    /* content:'';
+    z-index: -1;
+    border-radius: 4px; */ 
+      /* height: 10px; */
+/* background: red; */
+} 
+
+        
+.button.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    color: black;
+    transition: background .6s ease;
+    border: 2px solid rgb(109, 85, 247);
+   
+
+}
+
+.button.secondary-button:hover{
+    /* border: 2px solid rgb(109, 85, 247); */
+    /* background-clip: padding-box; */
+    /* border: 51px solid var(--gradient-color); */
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+
+
+}
+
+p.para{
+    color: var(--title-color);
+    font: normal 500 16px/25px var(--roboto);
+
+}
