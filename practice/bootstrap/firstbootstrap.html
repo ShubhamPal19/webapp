@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <meta name="viewport"conten="width=device-width, initial-scale=1"> 
+    <meta name="viewport" conten="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
 
@@ -18,23 +19,39 @@
 
     </style>
 
-</head> 
+</head>
 
 
 <style>
     .container {
 
-        background-color: red   ;
-        padding: 0 90px;
-        margin-top:20px;
-    }
-    .container-fluid {
-
-        background-color: red   ;
+        background-color: rgb(248, 205, 205);
         padding: 0 90px;
         margin-top: 20px;
     }
 
+    .container-fluid {
+
+        background-color: rgb(224, 211, 211);
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    .bg1 {
+        background: cyan;
+
+
+    }
+
+    .bg2 {
+        background: yellow;
+
+
+    }
+
+    .row {
+        margin: 5px;
+    }
 </style>
 
 
@@ -53,18 +70,116 @@
     <div class="container">
 
         <h2>My first Bootstrap Web Page</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo dolorem dolorum esse! Nemo repellendus ad expedita iusto odio optio cum temporibus iure possimus? Adipisci eaque voluptatibus optio praesentium quas?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo dolorem dolorum esse! Nemo repellendus ad
+        expedita iusto odio optio cum temporibus iure possimus? Adipisci eaque voluptatibus optio praesentium quas?
     </div>
 
     <div class="container-fluid">
 
         <h2>My first Bootstrap Web Page</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo dolorem dolorum esse! Nemo repellendus ad expedita iusto odio optio cum temporibus iure possimus? Adipisci eaque voluptatibus optio praesentium quas?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo dolorem dolorum esse! Nemo repellendus ad
+        expedita iusto odio optio cum temporibus iure possimus? Adipisci eaque voluptatibus optio praesentium quas?
+    </div>
+
+    <div class="container-fluid ">
+
+
+        <div class="row">
+            <div class="col-lg-6 bg1">sample para 1</div>
+            <div class="col-lg-6 bg2">sample para 2</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 bg1">sample para 1</div>
+            <div class="col-lg-4 bg2">sample para 2</div>
+            <div class="col-lg-4 bg1">sample para 3</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 bg1">sample para 1</div>
+            <div class="col-lg-7 bg2">sample para 2</div>
+            <div class="col-lg-2 bg1">sample para 3</div>
+        </div>
     </div>
 
 
 
+    <div class="container">
 
-    
+        <h1>Heading 1 <small>secondary text</small></h1>
+        <h1>Heading 2 <small>secondary text</small></h2>
+        <h1>Heading 3 <small>secondary text</small></h3>
+        <h1>Heading 4 <small>secondary text</small></h4>
+        <h1>Heading 5 <small>secondary text</small></h5>
+
+
+
+        <!-- highlight -->
+
+        <p>with bootstrap we can <mark>highlight </mark>text</p>
+
+
+
+        <!-- dotted underline -->
+
+
+        <p>we can also <abbr title="Example">underline </abbr>text with a dotted line</p>
+
+        <h1>Blockquotes</h1>
+        <blockquote>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perferendis obcaecati
+                deleniti odit omnis exercitationem magnam, nam natus officia corrupti, reprehenderit
+                repellendus. Provident aliquam dolorum dicta repellendus dolores distinctio totam!
+                
+            </p>
+
+
+        <footer>Lorem is simeplydfa </footer>
+        </blockquote>
+
+
+
+    </div>
+
+
+    <!--   code snippets  -->
+    <div class="container-fluid">
+
+        <h1>
+            Pre element
+        </h1>
+        <pre>
+            This text in a pre eleme
+            nt displays spaces    and line
+             breaks that are normally             only visible
+             in html
+        </pre>
+
+    </div>
+
+
+    <!-- contextual classes -->
+
+    <h1>contextual classes</h1>
+    <p class="text-muted">Muted text.</p>
+    <p class="text-primary">important text.</p>
+    <p class="text-success">text-success text.</p>
+    <p class="text-info">info text.</p>
+    <p class="text-warning">text-warning text.</p>
+    <p class="text-danger">danger text.</p>
+
+    <!-- contextual background -->
+
+    <h1>contextual classes</h1>
+    <p class="bg-muted">Muted text.</p>
+    <p class="bg-primary">important text.</p>
+    <p class="bg-success">text-success text.</p>
+    <p class="bg-info">info text.</p>
+    <p class="bg-warning">text-warning text.</p>
+    <p class="bg-danger">danger text.</p>
+
+
+
 </body>
+
 </html>
