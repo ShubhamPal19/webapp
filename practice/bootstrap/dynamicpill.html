@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="viewport" conten="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+
+
+</head>
+
+
+<style>
+    .container {
+
+        background-color: rgb(248, 205, 205);
+        padding: 0 90px;
+        margin-top: 20px;
+    }
+
+    .container-fluid {
+
+        background-color: rgb(224, 211, 211);
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    .bg1 {
+        background: cyan;
+
+
+    }
+
+    .bg2 {
+        background: yellow;
+
+
+    }
+
+    .row {
+        margin: 5px;
+    }
+</style>
+
+
+
+<!-- 
+    There are two types of container in bootstrap 
+
+    1. container
+    2. Fluid container
+    
+
+-->
+
+<body>
+
+
+
+
+    <div class="container">
+
+
+
+
+        <h4>Dynamic Tabs and pills</h4>
+        <ul class="nav nav-tabs">
+            <li class="active"><a  data-toggle="tab" href="#link1">link 1</a></li>
+            <li><a href="#link2" data-toggle="tab"  >link 2</a></li>
+            <li><a href="#link3" data-toggle="tab">link 3</a></li>
+            <li><a href="#link4" data-toggle="tab">link 4</a></li>
+        </ul>
+
+        <div class="tab-content"    >
+            <div class="tab-pane fade in active " id="link1">
+                <h3>
+                    link  1
+                    content
+                </h3>
+            </div>
+            <div class="tab-pane fade " id="link2">
+                <h3>
+                    link  2
+                    content
+                </h3>
+            </div>
+            <div class="tab-pane fade" id="link3">
+                <h3>
+                    link  3
+                    content
+                </h3>
+            </div>
+            <div    class="tab-pane fade " id="link4">
+                <h3>
+                    link  4
+                    content
+                </h3>
+            </div>
+        </div>
+
+         
+        <hr>
+
+
+        <ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h3>HOME</h3>
+    <p>Some content.</p>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h3>Menu 1</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h3>Menu 2</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+</div>
+
+    </div>
+</body>
+
+
+
+
+
+
+</html>
